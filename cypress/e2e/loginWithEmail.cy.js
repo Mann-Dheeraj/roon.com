@@ -13,7 +13,7 @@ describe('Login scenerios', () => {
     cy.contains("Continue").click();
 
     cy.wait('@waitForEmailorPasswordPopUpToAppear');
-    cy.get('input[type="password"]').type('Paste password');
+   cy.get('input[type="password"]').type('Paste password'); 
     cy.contains("Continue").click();
 
     cy.wait('@waitForHomePageToLoad');
