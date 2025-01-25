@@ -9,11 +9,11 @@ describe('Login scenerios', () => {
     cy.contains("Continue with Email").click();
 
     cy.wait('@waitForEmailorPasswordPopUpToAppear');
-    cy.get('input[type="email"]').type('PASTE_YOUR_EMAIL_HERE');
+    cy.get('input[type="email"]').type('Paste email');
     cy.contains("Continue").click();
 
     cy.wait('@waitForEmailorPasswordPopUpToAppear');
-    cy.get('input[type="password"]').type('PASTE_YOUR_PASSWORD_HERE');
+    cy.get('input[type="password"]').type('Paste password');
     cy.contains("Continue").click();
 
     cy.wait('@waitForHomePageToLoad');
